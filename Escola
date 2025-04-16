@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola Do  Futuro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      margin-bottom: 15px;
+    }
+
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Escola Do Futuro</h1>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <section id="sobre">
+      <h2>Sobre a Escola</h2>
+      <p>A Escola Nosso Futuro tem como missão formar cidadãos conscientes, críticos e preparados para os desafios do amanhã.</p>
+      <p>Oferecemos ensino de qualidade com professores qualificados, infraestrutura moderna e uma proposta pedagógica inovadora.</p>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria de Imagens</h2>
+      <div class="image-gallery">
+        <img src="Escola-do-Futuro-c-1215x911-1-785x589.jpg" alt="Imagem da escola">
+        <img src="editado-amazonia-2-600x400_c.png" alt="Alunos em atividade">
+        <img src="prefeitura-inaugura-laboratorio-de-ciencias-nas-escolas-municipais.jpg" alt="Laboratório de ciências">
+        <!-- Adicione mais imagens aqui -->
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: contato@escoladofuturo.com</p>
+      <p>Telefone: (11) 1234-5678</p>
+      <p>Endereço: Rua da Educação, 123 - Cidade do Saber</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Escola do Futuro. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Aqui você pode adicionar scripts em JavaScript futuramente
+    console.log("Bem-vindo à Escola do Futuro!");
+  </script>
+</body>
+</html>
