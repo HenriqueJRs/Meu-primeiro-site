@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aeroporto Guardião</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Aeroporto Guardião</h1>
+    <p>Conectando destinos com conforto e estilo</p>
+  </header>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#chegadas">Chegadas & Partidas</a>
+    <a href="#cafeteria">Cafeteria</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    Bem-vindo ao seu destino
+  </section>
+
+  <section id="chegadas">
+    <h2>🛬 Chegadas & Partidas</h2>
+    <div id="voos"></div>
+  </section>
+
+  <section id="cafeteria" class="cafeteria">
+    <h2>☕ Cafeteria Guardião</h2>
+    <div class="menu">
+      <div class="item">
+        <img src="cropped-café-espresso-scaled-1.webp" alt="Café Expresso">
+        <h3>Café Expresso</h3>
+        <p>R$ 5,00</p>
+      </div>
+      <div class="item">
+        <img src="lanche-brasileiro-pao-de-queijo-pao-de-queijo-no-prato-branco_97862-6081.avif" alt="Pão de Queijo">
+        <h3>Pão de Queijo</h3>
+        <p>R$ 4,50</p>
+      </div>
+      <div class="item">
+        <img src="Screenshot_1.png">
+        <h3>Bolo de Chocolate</h3>
+        <p>R$ 6,50</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>📸 Galeria</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300x200.png?text=Avião+1" alt="Imagem 1">
+      <img src="https://via.placeholder.com/300x200.png?text=Avião+2" alt="Imagem 2">
+      <img src="https://via.placeholder.com/300x200.png?text=Avião+3" alt="Imagem 3">
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>✈️ Sobre o Aeroporto</h2>
+    <p>O Aeroporto Guardião é referência em conforto, segurança e pontualidade. Servimos milhões de passageiros por ano com excelência.</p>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>📬 Fale Conosco</h2>
+    <form id="form-contato">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+      <p id="mensagem-sucesso" style="display:none;">Mensagem enviada com sucesso!</p>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Aeroporto Guardião. Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+// css 
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+header {
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+nav {
+  background: #005fa3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  background-image: url('giphy.gif');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px #000;
+}
+section {
+  padding: 40px 20px;
+}
+.cafeteria, #chegadas, #sobre {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.cafeteria h2, #chegadas h2, #galeria h2, #sobre h2 {
+  text-align: center;
+  color: #ff6600;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.item {
+  background: #ffe8cc;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+}
+.item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.item h3 {
+  margin: 10px 0 5px;
+  color: #cc5200;
+}
+.item p {
+  margin: 0;
+  font-weight: bold;
+}
+.galeria .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.galeria img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+footer {
+  background: #0077ff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+@media (max-width: 600px) {
+  .menu, .galeria .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contato {
+  background: #fff;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.contato h2 {
+  text-align: center;
+  color: #0077cc;
+}
+#form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#form-contato input,
+#form-contato textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+#form-contato button {
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#form-contato button:hover {
+  background: #005fa3;
+}
+#mensagem-sucesso {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+// javascript
+
+
+const voos = [
+  { destino: "São Paulo", horario: "12:30", status: "Confirmado" },
+  { destino: "Rio de Janeiro", horario: "13:15", status: "Atrasado" },
+  { destino: "Brasília", horario: "14:00", status: "No horário" }
+];
+
+const container = document.getElementById("voos");
+voos.forEach(voo => {
+  const div = document.createElement("div");
+  div.innerHTML = `<strong>${voo.destino}</strong> - ${voo.horario} - <em>${voo.status}</em>`;
+  container.appendChild(div);
+});
+
+
+document.getElementById("form-contato").addEventListener("submit", function(e) {
+  e.preventDefault();
+  document.getElementById("mensagem-sucesso").style.display = "block";
+  setTimeout(() => {
+    document.getElementById("mensagem-sucesso").style.display = "none";
+    document.getElementById("form-contato").reset();
+  }, 3000);
+});
